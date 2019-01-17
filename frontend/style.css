@@ -1,0 +1,42 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+#container {
+  height: 900px;
+  overflow: hidden;
+}
+
+#title {
+  text-align: center;
+}
+
+#right {
+  padding-top: 50px;
+}
+
+#map {
+  height: 550px;
+}
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 2px;
+}
+
+.area {
+  fill: lightsteelblue;
+}
+
+.zoom {
+  cursor: move;
+  fill: none;
+  pointer-events: all;
+}

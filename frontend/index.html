@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pseudo Base Visualization</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="./node_modules/bootstrap3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div id="header">
+    </div>
+    <div id="container">
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+          <div class="col-md-8" id="left">
+              <h2 id="title">Pseudo Base Visualization</h2>
+            <div id="map"></div>
+            <div id="charts"></div>
+          </div>
+          <div class="col-md-4" id="right">
+            <h3>Control Tools</h3>
+            <hr>
+            <p>
+              Time Range:
+              <label class="radio-inline">
+                <input type="radio" name="range" value="all" checked>
+                All
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="range" value="weekday">
+                Combine Weekdays
+              </label>
+            </p>
+            <p>
+              Category:
+              <label class="radio-inline">
+                <input type="radio" name="tag" value="all" checked>
+                All
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="tag" value="fraud">
+                Fraud
+              </label>
+              <!-- <label class="radio-inline">
+                <input type="radio" name="tag" value="gamble">
+                Gamble
+              </label> -->
+              <label class="radio-inline">
+                <input type="radio" name="tag" value="woman">
+                Sex
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="tag" value="bill">
+                Invoice
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="tag" value="rest">
+                Others
+              </label>
+            </p>
+            <p>
+              <button id="animate_control" class="btn btn-primary">Animate</button>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="loading">Loading data...</div>
+  </body>
+  <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=U5sPWwDGfaGoyztsdP9kumcaiXlK1gYR"></script>
+  <script type="text/javascript" src="https://api.map.baidu.com/library/Heatmap/2.0/src/Heatmap_min.js"></script>
+  <script type="text/javascript" src="./node_modules/coordtransform/index.js"></script>
+  <script type="text/javascript" src="./node_modules/d3/dist/d3.min.js"></script>
+  <script type="text/javascript" src="./node_modules/moment/min/moment.min.js"></script>
+  <script type="text/javascript" src="scripts.js"></script>
+</html>
